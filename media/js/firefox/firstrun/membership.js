@@ -67,8 +67,8 @@
     function updateUTMParam(id) {
         var utmCampaign = id ? encodeURIComponent(id) : 'fxa-embedded-form';
         var iframe = document.getElementById('fxa');
-        var dataSrc = iframe.getAttribute('data-src');
-        iframe.setAttribute('data-src', dataSrc.replace('utm_campaign=fxa-embedded-form', 'utm_campaign=' + utmCampaign));
+        var dataSrc = iframe.dataset.src;
+        iframe.dataset.src = dataSrc.replace('utm_campaign=fxa-embedded-form', 'utm_campaign=' + utmCampaign);
     }
 
     // animates page to step2 and loads the FxA sign up form.
@@ -120,7 +120,6 @@
     }
 
     function onLaterLinkClick(e) {
-        e.preventDefault();
         window.dataLayer.push({
             'event': 'in-page-interaction',
             'eAction': 'Link Click',

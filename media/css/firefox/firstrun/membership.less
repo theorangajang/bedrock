@@ -37,21 +37,21 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
     font-family: 'Zilla Slab', 'Open Sans', X-LocaleSpecific, sans-serif;
     font-weight: bold;
-    text-shadow: none;
     letter-spacing: normal;
+    text-shadow: none;
 }
 
 #wrapper {
-    width: 885px;
     margin: 0 auto;
+    width: 885px;
 }
 
 main > header {
     .at2x('/media/img/firefox/template/logo-large.png', 140px, 140px);
     background-position: top 100px right 100px;
     background-repeat: no-repeat;
-    padding: 80px 0 0 50px;
     border-bottom: 3px solid #fff;
+    padding: 80px 0 0 50px;
 
     h1 {
         .font-size(48px);
@@ -59,10 +59,10 @@ main > header {
     }
 
     p {
-        .open-sans-light;
         .font-size(18px);
-        max-width: 30em;
+        .open-sans-light;
         margin-bottom: 40px;
+        max-width: 30em;
     }
 }
 
@@ -82,8 +82,8 @@ main > header {
     background: url('/media/img/firefox/firstrun-membership/carousel-bg.png') top center no-repeat;
     background-size: cover;
     float: left;
-    width: 550px;
     overflow: hidden;
+    width: 550px;
 }
 
 .carousel {
@@ -134,6 +134,7 @@ main > header {
     span {
         border-radius: 50%;
         border: 3px solid #fff;
+        cursor: pointer;
         display: inline-block;
         height: 13px;
         margin: 0 5px;
@@ -182,12 +183,13 @@ main > header {
             border-radius: 20px;
             border: 3px solid @colorPhotonBlue;
             color: @colorPhotonBlue;
+            cursor: pointer;
             font-weight: bold;
             margin: 20px 0;
             padding: 12px 8px;
             text-transform: uppercase;
-            width: 100%;
             transition: background .2s ease-in-out, color .2s ease-in-out;
+            width: 100%;
 
             &:hover,
             &:focus {
@@ -221,8 +223,8 @@ main > header {
 
     header {
         float: left;
-        width: 385px;
         padding-left: 50px;
+        width: 385px;
 
         h2 {
             .font-size(36px);

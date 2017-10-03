@@ -363,7 +363,6 @@ PIPELINE_CSS = {
     },
     'firefox_firstrun_membership': {
         'source_filenames': (
-            'css/base/notification-banner.less',
             'css/firefox/firstrun/membership.less',
             'css/base/mozilla-fxa-iframe.less',
         ),
@@ -1239,7 +1238,6 @@ PIPELINE_JS = {
         'source_filenames': (
             'js/libs/jquery.cycle2.min.js',
             'js/base/mozilla-fxa-iframe.js',
-            'js/base/uitour-lib.js',
             'js/firefox/firstrun/membership.js',
         ),
         'output_filename': 'js/firefox_firstrun_membership-bundle.js',

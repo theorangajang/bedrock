@@ -13,10 +13,6 @@
   {% stylesheet 'firefox_firstrun_membership' %}
 {% endblock %}
 
-{% block js %}
-  {% javascript 'firefox_firstrun_membership' %}
-{% endblock %}
-
 {% block global_nav %}{% endblock %}
 {% block site_header %}{% endblock %}
 
@@ -76,6 +72,10 @@
 
 {% block site_footer %}{% endblock %}
 {% block email_form %}{% endblock %}
+
+{% block js %}
+  {% javascript 'firefox_firstrun_membership' %}
+{% endblock %}
 
 {# Don't display notification for test variation #}
 {% block update_notification %}{% endblock %}
