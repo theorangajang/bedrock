@@ -24,6 +24,7 @@ from product_details.version_compare import Version
 from lib import l10n_utils
 from lib.l10n_utils.dotlang import lang_file_is_active
 from bedrock.base.urlresolvers import reverse
+from bedrock.base.waffle import switch
 from bedrock.firefox.firefox_details import firefox_desktop, firefox_android
 from bedrock.firefox.forms import SendToDeviceWidgetForm
 from bedrock.mozorg.util import HttpResponseJSON
@@ -737,11 +738,14 @@ class FirefoxFocusView(BlogPostsView):
 
 
 class FirefoxHubView(BlogPostsView):
-    blog_posts_limit = 1
-    blog_posts_template_variable = 'articles'
-    blog_slugs = 'firefox'
-    blog_tags = ['home']
-    template_name = 'firefox/hub/home.html'
+    if switch('firefox-57-release'):
+        template_name = 'firefox/firefox-quantum.html'
+    else:
+        blog_posts_limit = 1
+        blog_posts_template_variable = 'articles'
+        blog_slugs = 'firefox'
+        blog_tags = ['home']
+        template_name = 'firefox/hub/home.html'
 
 
 def FirefoxProductDeveloperView(request):
