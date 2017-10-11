@@ -1,0 +1,26 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+@import '../../pebbles/includes/lib';
+
+.button,
+a.button:link,
+a.button:visited {
+    &.quantum-download {
+        background-color: #4ee331;
+        border-color: #4ee331;
+        border-radius: 100px;
+
+        .download-title {
+            color: #0040ab;
+            @include font-size(14px);
+            font-weight: 700;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: #65e74c;
+        }
+    }
+}
