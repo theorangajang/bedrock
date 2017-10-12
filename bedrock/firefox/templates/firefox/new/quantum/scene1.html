@@ -8,8 +8,7 @@
 
 {# All stylesheets are loaded in extrahead to serve legacy IE basic styles #}
 {% block extrahead %}
-  {% stylesheet 'pebbles' %}
-  {% stylesheet 'firefox_new_quantum_common' %}
+  {{ super() }}
   {% stylesheet 'firefox_new_quantum_scene1' %}
 {% endblock %}
 
@@ -115,7 +114,7 @@
       <h4 class="heading-mac">{{_('Download Firefox <span>for macOS</span>') }}</h4>
       <h4 class="heading-linux">{{_('Download Firefox <span>for Linux</span>') }}</h4>
 
-      {{ download_firefox(dom_id='download-other-platforms-modal', alt_copy=_('Download Now'), locale_in_transition=True, button_color='quantum', download_location='other') }}
+      {{ download_firefox(dom_id='download-other-platforms-modal', alt_copy=_('Download Now'), locale_in_transition=True, download_location='other') }}
     </section>
   </div>
 </div>

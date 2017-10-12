@@ -20,7 +20,7 @@
     }
 
     .newsletter-form-content {
-        width: 300px;
+        width: 280px;
         margin: 0 auto;
     }
 
@@ -129,6 +129,10 @@
         grid-template-columns: 2fr 300px;
         grid-gap: 40px;
         padding: 40px;
+
+        .newsletter-form-content {
+            width: 300px;
+        }
 
         .newsletter-title {
             @include background-size(201px 138px);

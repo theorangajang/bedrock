@@ -241,7 +241,7 @@ html.ios {
 .features {
     text-align: center;
 
-    h2 {
+    h3 {
         @include font-size-level4;
         color: $color-quantum-blue;
         font-weight: normal;
@@ -294,7 +294,7 @@ html.ios {
             }
         }
 
-        h2 {
+        h3 {
             margin-bottom: 20px;
         }
     }
@@ -302,7 +302,7 @@ html.ios {
 
 // fancy gradient colored text for modern browsers.
 @supports (background-clip: text) or (-webkit-background-clip: text) {
-    .features h2 {
+    .features h3 {
         background: linear-gradient(-90deg, #05c8e5 0%, #008bff 100%);
         -webkit-background-clip: text;
         background-clip: text;

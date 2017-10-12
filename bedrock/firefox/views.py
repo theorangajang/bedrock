@@ -594,7 +594,7 @@ def new(request):
                 template = 'firefox/new/sem/unsupported-browser/scene2.html'
             elif experience in ['batmfree', 'batmnimble', 'batmresist']:
                 template = 'firefox/new/batm/scene2.html'
-            elif lang_file_is_active('firefox/new/quantum', locale) and switch('firefox-57-release'):
+            elif switch('firefox-57-release'):
                 template = 'firefox/new/quantum/scene2.html'
             else:
                 template = 'firefox/new/scene2.html'
@@ -644,7 +644,7 @@ def new(request):
                 template = 'firefox/new/batm/nimble.html'
             elif experience == 'batmresist':
                 template = 'firefox/new/batm/resist.html'
-            elif lang_file_is_active('firefox/new/quantum', locale) and switch('firefox-57-release'):
+            elif switch('firefox-57-release'):
                 template = 'firefox/new/quantum/scene1.html'
             else:
                 template = 'firefox/new/scene1.html'

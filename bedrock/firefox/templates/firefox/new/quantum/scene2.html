@@ -12,8 +12,7 @@
 
 {# All stylesheets are loaded in extrahead to serve legacy IE basic styles #}
 {% block extrahead %}
-  {% stylesheet 'pebbles' %}
-  {% stylesheet 'firefox_new_quantum_common' %}
+  {{ super() }}
   {% stylesheet 'firefox_new_quantum_scene2' %}
 {% endblock %}
 

@@ -76,6 +76,13 @@ $color-quantum-blue: #0a84ff;
             color: $color-quantum-blue;
             display: inline-block;
             padding-left: 24px;
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:active,
+        a:focus {
+            text-decoration: underline;
         }
     }
 
@@ -97,10 +104,6 @@ $color-quantum-blue: #0a84ff;
             display: none;
             margin-bottom: 20px;
         }
-    }
-
-    .download-link .download-title {
-        color: #fff;
     }
 
     .fx-privacy-link {
